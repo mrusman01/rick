@@ -23,14 +23,11 @@ export const headerLinks: HeaderLinksArray = [
 
 type Tokens = Array<any>;
 export const tokensArray: Tokens = [
-  logo,
   coin,
   metamask,
   pancake,
   trustwallet,
-  decenterlizeImg,
   safepay,
-  verifyIcon,
   walletconnect,
   dexTool,
 ];

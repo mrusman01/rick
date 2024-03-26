@@ -1,6 +1,7 @@
 "use client";
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
+import { verifyIcon } from "../../../public/assets";
 
 const HeroSection = () => {
   return (
@@ -38,7 +39,7 @@ const HeroSection = () => {
         <div className="mt-5 flex items-center gap-2">
           {" "}
           <Image
-            src="/verifyIcon.svg"
+            src={verifyIcon}
             alt="verfiy"
             width={30}
             height={30}

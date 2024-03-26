@@ -26,17 +26,16 @@ const TokenList = () => {
           },
         }}
       >
-        <div className="flex items-center justify-center  w-full ">
+        <div className="flex items-center justify-center w-full ">
           {tokensArray.map((item) => {
             return (
               <SwiperSlide key={item}>
-                <div className="flex  items-center ">
+                <div className="flex items-center justify-center h-16">
                   <Image
                     src={item}
                     alt={item}
                     width={230}
                     height={230}
-                    className="flex items-center"
                   />
                 </div>
               </SwiperSlide>

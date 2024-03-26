@@ -1,13 +1,14 @@
 import { DecenterlizedCards } from "@/constant";
 import Image from "next/image";
 import React from "react";
+import { decenterlizeImg } from "../../../public/assets";
 
 const Decenterlized = () => {
   return (
     <div className="container mx-auto py-10">
       <div className="flex justify-center">
         <Image
-          src="/decenterlizeImg.svg"
+          src={decenterlizeImg}
           alt="monster"
           width={150}
           height={150}
@@ -29,12 +30,12 @@ const Decenterlized = () => {
         </p>
       </div>
 
-      <div className="container mx-auto px-3 flex items-center md:justify-between justify-center gap-5 flex-wrap mt-5">
+      <div className="container mx-auto sm:w-3/4 lg:w-1/2 xl:w-[90%] px-3 flex items-center md:justify-between justify-center gap-5 flex-wrap mt-16">
         {DecenterlizedCards.map((item, i) => {
           return (
             <div
               key={i}
-              className="md:w-96 w-full md:h-44 h-40 bg-[#8038e9] text-white rounded-3xl p-6"
+              className="md:w-96 w-full md:h-44 h-40 bg-[#8038e9] text-white rounded-3xl p-6 text-center md:text-left"
             >
               <p className="text-[#eeedf8] font-black md:text-2xl text-xl">{item.title}</p>
               <p className="text-[#eeedf8] font-normal md:text-base text-[13px] mt-1">
