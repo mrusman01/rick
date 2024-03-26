@@ -1,9 +1,11 @@
 "use client";
 import React from "react";
-import { StyledBtn } from "./styledComponent";
 import Image from "next/image";
-import { headerLinks } from "@/constant";
+
 import Drawer from "./drawer";
+import { headerLinks } from "@/constant";
+import { StyledBtn } from "../styledComponent";
+import { logo } from "../../../public/assets";
 
 const Header = () => {
   return (
@@ -23,7 +25,7 @@ const Header = () => {
             color="text-white"
           />
         </div>
-        <Image src="/logo.svg" alt="rick" width={250} height={250} />
+        <Image src={logo} alt="rick" width={250} height={250} />
 
         <div className="gap-4 flex items-center">
           <StyledBtn
@@ -54,7 +56,7 @@ const Header = () => {
 
       {/* mobile view */}
       <div className="container mx-auto px-4 flex md:hidden justify-between items-center">
-        <Image src="/logo.png" alt="rick" width={200} height={200} />
+        <Image src={logo} alt="rick" width={200} height={200} />
         <Drawer />
       </div>
     </div>

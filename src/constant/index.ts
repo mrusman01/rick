@@ -1,3 +1,16 @@
+import {
+  coin,
+  decenterlizeImg,
+  dexTool,
+  logo,
+  metamask,
+  pancake,
+  safepay,
+  trustwallet,
+  verifyIcon,
+  walletconnect,
+} from "../../public/assets";
+
 type HeaderLinksArray = Array<string>;
 
 export const headerLinks: HeaderLinksArray = [
@@ -10,12 +23,16 @@ export const headerLinks: HeaderLinksArray = [
 
 type Tokens = Array<any>;
 export const tokensArray: Tokens = [
-  "/metamask.svg",
-  "/pancake.svg",
-  "/safepay.svg",
-  "/trustwallet.svg",
-  "/walletconnect.svg",
-  "/dexTool.svg",
+  logo,
+  coin,
+  metamask,
+  pancake,
+  trustwallet,
+  decenterlizeImg,
+  safepay,
+  verifyIcon,
+  walletconnect,
+  dexTool,
 ];
 
 interface Card {
